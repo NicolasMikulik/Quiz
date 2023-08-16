@@ -1,13 +1,16 @@
-$primary: #150080;
+$primary: #527C4E;//#150080;
 $accent: #d08642;
 $bg: #ffffff;
 $bg-accent: #e7e8e9;
 $disabled: #9c9c9c;
 $foreground: #2d264b;
+$light-green: #D1E9B9;
+$mid-green:#77AE74;
 
 body {
     font-family: monospace;
-    background: linear-gradient(0deg, $primary 0.03%, $accent);
+    background: $light-green;
+    //linear-gradient(0deg, $primary 0.3%, desaturate($accent,8%));
     color: $foreground;
     display: flex;
     justify-content: center;
@@ -27,7 +30,7 @@ body {
     .active-question-no{
         font-size: 32px;
         font-weight: 500;
-        color: $primary;
+        color: $mid-green;
     }
 
     .total-question{
@@ -72,7 +75,7 @@ body {
     }
 
     button {
-        background: linear-gradient(0deg, $primary 0.03%, $accent);
+        background: $primary;
         border-radius: 9px;
         font-size: 18px;
         color: $bg;
@@ -113,7 +116,7 @@ body {
 
 .form-field {
         display: block;
-        width: 100%;
+        width: fit-content;
         margin-top: 10px;
         padding: 8px 16px;
         line-height: 25px;
@@ -139,16 +142,17 @@ body {
 }
 
 button {
-        background: linear-gradient(0deg, $primary 0.03%, $accent);
-        border-radius: 9px;
-        font-size: 18px;
-        color: $bg;
-        padding: 10px 42px;
-        outline: none;
-        border: none;
-        margin-top: 15px;
-        cursor: pointer;
-        &:disabled
+    background: #527C4E;
+    border-radius: 9px;
+    font-size: 18px;
+    color: $bg;
+    padding: 10px 42px;
+    outline: none;
+    border: none;
+    margin: auto;
+    cursor: pointer;
+    display: block;
+    &:disabled
 
     {
         background: $bg-accent;
@@ -171,4 +175,9 @@ img {
     //border-style: groove;
     object-fit: contain;
     margin: 10px 0px 10px 0px;
+}
+
+.centered-div{
+    display: grid;
+    place-content: center;
 }

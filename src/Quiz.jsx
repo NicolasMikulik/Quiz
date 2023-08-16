@@ -86,18 +86,19 @@ const Quiz = ({ questions }) => {
                 <div>
                     
                         <form onSubmit={onSubmitName}>
-                            <div className="warning-label">
-                            <input onChange={e => setName(e.target.value)}
-                                   className="form-field"
-                                   placeholder="Zadajte meno" />
-                                   {nameInvalid ?
-                                        <>
-                                            <br></br>
-                                            <label>Meno musí mať aspoň 3 znaky</label>
-                                        </> : ""
-                                   }
+                            <div className="centered-div">
+                                <input onChange={e => setName(e.target.value)}
+                                       className="form-field"
+                                       placeholder="Zadajte meno" />
+                                       {nameInvalid ?
+                                            <>
+                                                <br></br>
+                                                <label>Meno musí mať aspoň 3 znaky</label>
+                                            </> : ""
+                                       }
                             </div>
                             <div>
+                                <br></br>
                                 <button onClick={onSubmitName}
                                     className="button">Začať kvíz</button>
                             </div>
