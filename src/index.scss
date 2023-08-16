@@ -20,46 +20,46 @@ body {
 }
 
 .quiz-container {
-    width: 500px;
+    width: 60%wh;
     background: $bg;
-    border-radius: 4px;
-    margin-top: 100px;
-    padding: 30px 60px;
+    border-radius: 0.25rem;
+    margin-top: 2rem;
+    padding: 2rem 4rem;
     box-sizing: border-box;
 
     .active-question-no{
-        font-size: 32px;
+        font-size: 2rem;
         font-weight: 500;
         color: $mid-green;
     }
 
     .total-question{
-        font-size: 16px;
+        font-size: 1rem;
         font-weight: 500;
         color: $disabled;
     }
 
     h2{
-        font-size:20px;
+        font-size:1.25rem;
         font-weight: 500;
         margin:0;
     }
 
 
     ul {
-        margin-top: 20px;
-        margin-left: -40px;
+        margin-top: 1.25rem;
+        margin-left: -2.5rem;
 
         li {
                text-decoration: none;
                list-style: none;
                color: $foreground;
-               font-size: 16px;
+               font-size: 1rem;
                background: $bg;
                border:1px solid $disabled;
-               border-radius: 16px;
-               padding: 11px;
-               margin-top: 15px;
+               border-radius: 1rem;
+               padding: 0.75rem;
+               margin-top: 1rem;
                cursor: pointer;
            }
         .selected-answer {
@@ -74,18 +74,18 @@ body {
         justify-content: flex-end;
     }
 
-    button {
-        background: $primary;
-        border-radius: 9px;
-        font-size: 18px;
-        color: $bg;
-        padding: 10px 42px;
-        outline: none;
-        border:none;
-        margin-top: 15px;
-        cursor: pointer;
-
-        &:disabled {
+button {
+    background: $primary;
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
+    color: $bg;
+    padding: 0.75rem 42px;
+    outline: none;
+    border: none;
+    margin-top: 1rem;
+    cursor: pointer;
+    font-family: monospace;
+    &:disabled {
                        background: $bg-accent;
                        color: $disabled;
                        cursor: not-allowed;
@@ -96,18 +96,18 @@ body {
         text-align: center;
 
         h3 {
-               font-size: 24px;
+               font-size: 1.5rem;
                letter-spacing: 1.4px;
                text-align: center;
            }
 
            p {
-               font-size: 16px;
+               font-size: 1rem;
                font-weight: 500;
 
                span {
                         color: $primary;
-                        font-size: 22px;
+                        font-size: 1.75rem;
                     }
 
            }
@@ -117,20 +117,17 @@ body {
 .form-field {
         display: block;
         width: fit-content;
-        margin-top: 10px;
-        padding: 8px 16px;
-        line-height: 25px;
-        font-size: 14px;
+        margin: auto;
+        padding: 0.5rem 1rem;
+        line-height: 1.5rem;
+        font-size: 1rem;
         font-weight: 500;
         font-family: inherit;
-        border-radius: 6px;
-        -webkit-appearance: none;
+        border-radius: 0.5rem;
         color: var(--input-color);
-        border: 2px solid;
+        border: 0.125rem solid;
         background: $bg;
-        transition: border .3s ease;
         &::placeholder
-
     {
         color: var(--input-placeholder);
     }
@@ -143,17 +140,17 @@ body {
 
 button {
     background: #527C4E;
-    border-radius: 9px;
-    font-size: 18px;
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
     color: $bg;
-    padding: 10px 42px;
+    padding: 0.75rem 2.5rem;
     outline: none;
     border: none;
     margin: auto;
     cursor: pointer;
     display: block;
+    font-family: monospace;
     &:disabled
-
     {
         background: $bg-accent;
         color: $disabled;
@@ -162,19 +159,19 @@ button {
 }
 
 label {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 500;
     color: $primary;
-    margin-left: 20px;
+    margin: auto;
 }
 
 img {
     width: 100%;
     height: 100%;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     //border-style: groove;
     object-fit: contain;
-    margin: 10px 0px 10px 0px;
+    margin: 0.75rem 0rem 0.75rem 0rem;
 }
 
 .centered-div{

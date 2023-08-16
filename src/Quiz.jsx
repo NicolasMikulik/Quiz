@@ -87,7 +87,8 @@ const Quiz = ({ questions }) => {
                     
                         <form onSubmit={onSubmitName}>
                             <div className="centered-div">
-                                <input onChange={e => setName(e.target.value)}
+                            <br></br>
+                            <input onChange={e => setName(e.target.value)}
                                        className="form-field"
                                        placeholder="Zadajte meno" />
                                        {nameInvalid ?
@@ -133,7 +134,7 @@ const Quiz = ({ questions }) => {
                         </>)
                         :
                         <div className="result">
-                            <h3>Result</h3>
+                            <h3>Výsledky</h3>
                             <p>Počet otázok: <span> {questions.length} </span></p>
                             {/* <p>Total Score: <span> {result.score} </span></p>*/}
                             <p>Správne odpovede: <span> {result.correctAnswers} </span></p>
