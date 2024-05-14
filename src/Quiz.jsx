@@ -127,6 +127,11 @@ const Quiz = ({ questions }) => {
                                 }
                             </ul>
                             <div className="footer">
+                                {/*{currentQuestion > 0 &&*/}
+                                {/*    <button>*/}
+                                {/*    Predchádzajúca otázka*/}
+                                {/*    </button>*/}
+                                {/*}*/}
                                 <button onClick={onClickNext} disabled={answerIdx === null}>
                                     {currentQuestion === questions.length - 1 ? "Vyhodnotenie" : "Ďalšia otázka"}
                                 </button>
